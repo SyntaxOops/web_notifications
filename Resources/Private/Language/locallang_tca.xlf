@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" product-name="web_notifications" date="2018-11-07T14:25:31+01:00">
+        <header/>
+		<body>
+			<trans-unit id="device.title">
+				<source>Push subscriptions</source>
+			</trans-unit>
+			<trans-unit id="device.identifier">
+				<source>Identifier</source>
+			</trans-unit>
+			<trans-unit id="device.endpoint">
+				<source>Endpoint</source>
+			</trans-unit>
+			<trans-unit id="device.publicKey">
+				<source>Public key</source>
+			</trans-unit>
+			<trans-unit id="device.authToken">
+				<source>Authentication token</source>
+			</trans-unit>
+			<trans-unit id="device.contentEncoding">
+				<source>Content encoding</source>
+			</trans-unit>
+			<trans-unit id="title">
+				<source>Notifications</source>
+            </trans-unit>
+            <trans-unit id="column.title">
+                <source>Title</source>
+            </trans-unit>
+            <trans-unit id="column.bodytext">
+                <source>Body text</source>
+            </trans-unit>
+            <trans-unit id="column.media">
+                <source>Image</source>
+            </trans-unit>
+            <trans-unit id="column.url">
+                <source>URL</source>
+            </trans-unit>
+            <trans-unit id="column.status">
+                <source>Status</source>
+            </trans-unit>
+            <trans-unit id="column.status.0">
+                <source>Not sent</source>
+            </trans-unit>
+            <trans-unit id="column.status.1">
+                <source>In the process</source>
+            </trans-unit>
+            <trans-unit id="column.status.2">
+                <source>Done</source>
+            </trans-unit>
+			<trans-unit id="column.status.3">
+				<source>Failed</source>
+			</trans-unit>
+        </body>
+    </file>
+</xliff>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+    <file source-language="en" target-language="fr" datatype="plaintext" original="messages" product-name="web_notifications" date="2018-11-07T14:25:31+01:00">
+        <header/>
+        <body>
+            <trans-unit id="device.title" approved="yes">
+                <target>Abonnements push</target>
+            </trans-unit>
+            <trans-unit id="device.identifier" approved="yes">
+                <target>Identifiant</target>
+            </trans-unit>
+            <trans-unit id="device.endpoint" approved="yes">
+                <target>Point de terminaison</target>
+            </trans-unit>
+            <trans-unit id="device.publicKey" approved="yes">
+                <target>Clé publique</target>
+            </trans-unit>
+            <trans-unit id="device.authToken" approved="yes">
+                <target>Jeton d'authentification</target>
+            </trans-unit>
+            <trans-unit id="device.contentEncoding" approved="yes">
+                <target>Encodage du contenu</target>
+            </trans-unit>
+            <trans-unit id="title" approved="yes">
+                <target>Les notifications</target>
+            </trans-unit>
+            <trans-unit id="column.title" approved="yes">
+                <target>Titre</target>
+            </trans-unit>
+            <trans-unit id="column.bodytext" approved="yes">
+                <target>Le corps du texte</target>
+            </trans-unit>
+            <trans-unit id="column.media" approved="yes">
+                <target>Image</target>
+            </trans-unit>
+            <trans-unit id="column.url" approved="yes">
+                <target>URL</target>
+            </trans-unit>
+            <trans-unit id="column.status" approved="yes">
+                <target>Statut</target>
+            </trans-unit>
+            <trans-unit id="column.status.0" approved="yes">
+                <target>Pas envoyé</target>
+            </trans-unit>
+            <trans-unit id="column.status.1" approved="yes">
+                <target>Dans le processus</target>
+            </trans-unit>
+            <trans-unit id="column.status.2" approved="yes">
+                <target>Terminé</target>
+            </trans-unit>
+			<trans-unit id="column.status.3" approved="yes">
+				<target>Échec</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

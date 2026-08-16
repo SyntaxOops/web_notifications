@@ -1,0 +1,14 @@
+settings:
+  webNotifications.icon:
+    type: string
+    default: ''
+    label: 'Notification icon URL'
+    description: 'Public URL of the default icon shown in browser notifications.'
+  webNotifications.image.maxWidth:
+    type: int
+    default: 290
+    label: 'Notification image maximum width'
+  webNotifications.image.maxHeight:
+    type: int
+    default: 290
+    label: 'Notification image maximum height'

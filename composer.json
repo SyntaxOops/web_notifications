@@ -1,0 +1,93 @@
+{
+    "name": "syntaxoops/web-notifications",
+    "type": "typo3-cms-extension",
+    "description": "Send browser push notifications from TYPO3",
+    "keywords": [
+        "TYPO3",
+        "push notifications",
+        "web push"
+    ],
+    "homepage": "https://github.com/SyntaxOops/web_notifications",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Haythem Daoud",
+            "role": "Senior TYPO3 Developer",
+            "email": "haythemdaoud.x@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "ext-mbstring": "*",
+        "ext-openssl": "*",
+        "minishlink/web-push": "^10.1",
+        "typo3/cms-backend": "^13.4 || ^14.3",
+        "typo3/cms-core": "^13.4 || ^14.3",
+        "typo3/cms-extbase": "^13.4 || ^14.3",
+        "typo3/cms-fluid": "^13.4 || ^14.3",
+        "typo3/cms-frontend": "^13.4 || ^14.3"
+    },
+    "suggest": {
+        "typo3/cms-scheduler": "Run notification delivery as a scheduled TYPO3 task"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.95",
+        "php-parallel-lint/php-parallel-lint": "^1.4",
+        "phpstan/phpstan": "^2.1",
+        "typo3/coding-standards": "^0.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "SyntaxOops\\WebNotifications\\": "Classes/"
+        }
+    },
+    "replace": {
+        "typo3-ter/web-notifications": "self.version"
+    },
+    "config": {
+        "vendor-dir": ".Build/vendor",
+        "bin-dir": ".Build/bin",
+        "platform": {
+            "php": "8.2.0"
+        },
+        "allow-plugins": {
+            "typo3/class-alias-loader": true,
+            "typo3/cms-composer-installers": true
+        },
+        "sort-packages": true
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "chmod +x .githooks/pre-commit",
+            "git config --local core.hooksPath .githooks/"
+        ],
+        "post-update-cmd": [
+            "chmod +x .githooks/pre-commit",
+            "git config --local core.hooksPath .githooks/"
+        ],
+        "composer:validate": "@composer validate --strict",
+        "php:lint": "parallel-lint --exclude .Build --exclude var .",
+        "php:cs": "php-cs-fixer fix --config=Build/php-cs-fixer.php --dry-run --diff --using-cache=no",
+        "php:fix": "php-cs-fixer fix --config=Build/php-cs-fixer.php",
+        "php:stan": "phpstan analyse --configuration=Build/phpstan.neon --no-progress",
+        "ci": [
+            "@composer:validate",
+            "@php:lint",
+            "@php:cs",
+            "@php:stan"
+        ]
+    },
+    "extra": {
+        "typo3/cms": {
+            "cms-package-dir": "{$vendor-dir}/typo3/cms",
+            "web-dir": ".Build/Web",
+            "extension-key": "web_notifications",
+            "version": "1.0.0",
+            "Package": {
+                "providesPackages": {}
+            }
+        }
+    }
+}

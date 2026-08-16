@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+	<file source-language="en" target-language="fr" datatype="plaintext" original="messages" product-name="web_notifications" date="2018-11-07T14:25:31+01:00">
+		<header/>
+		<body>
+			<trans-unit id="mlang_tabs_tab" approved="yes">
+				<target>Notifications Web PUSH</target>
+			</trans-unit>
+			<trans-unit id="mlang_labels_tabdescr" approved="yes">
+				<target>Liste des abonnés. Formulaire pour ajouter des notifications.</target>
+			</trans-unit>
+			<trans-unit id="mlang_labels_tablabel" approved="yes">
+				<target>Liste des appréciations</target>
+			</trans-unit>
+			<trans-unit id="module.backend.menu.btm.list" approved="yes">
+				<target>Liste de notifications</target>
+			</trans-unit>
+			<trans-unit id="module.backend.menu.btm.new" approved="yes">
+				<target>Nouvelle notification</target>
+			</trans-unit>
+			<trans-unit id="configure.pidFolder" approved="yes">
+				<target>Dossier avec notification</target>
+			</trans-unit>
+			<trans-unit id="configure.publicKey" approved="yes">
+				<target>Clé publique</target>
+			</trans-unit>
+			<trans-unit id="configure.privateKey" approved="yes">
+				<target>Clé privée</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

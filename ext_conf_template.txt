@@ -1,0 +1,4 @@
+# cat=basic; type=string; label=LLL:EXT:web_notifications/Resources/Private/Language/locallang_mod.xlf:configure.publicKey
+publicKey =
+# cat=basic; type=string; label=LLL:EXT:web_notifications/Resources/Private/Language/locallang_mod.xlf:configure.privateKey
+privateKey =
