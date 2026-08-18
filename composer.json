@@ -12,8 +12,8 @@
     "authors": [
         {
             "name": "Haythem Daoud",
-            "role": "Senior TYPO3 Developer",
-            "email": "haythemdaoud.x@gmail.com"
+            "role": "Senior TYPO3 Backend Developer",
+            "email": "hello@haythemdaoud.dev"
         }
     ],
     "require": {
@@ -84,7 +84,7 @@
             "cms-package-dir": "{$vendor-dir}/typo3/cms",
             "web-dir": ".Build/Web",
             "extension-key": "web_notifications",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "Package": {
                 "providesPackages": {}
             }
